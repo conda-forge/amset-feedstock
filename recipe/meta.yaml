@@ -11,7 +11,7 @@ source:
   sha256: 9f38c0d992402af5f0b44d39a19cb6d8fbb89f723ce01d12638d5b5d3128ec19
 
 build:
-  number: 0
+  number: 2
   noarch: python
   entry_points:
     - amset = amset.tools.cli:cli
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
   run:
     - boltztrap2 ==20.7.1
     - click ==7.1.2
@@ -32,7 +32,7 @@ requirements:
     - numpy ==1.19.4
     - pyfftw ==0.12.0
     - pymatgen ==2020.10.20
-    - python
+    - python >=3.5
     - quadpy ==0.16.2
     - scipy ==1.5.3
     - spglib ==1.16.0
