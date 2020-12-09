@@ -1,5 +1,5 @@
 {% set name = "amset" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amset-{{ version }}.tar.gz
-  sha256: 9f38c0d992402af5f0b44d39a19cb6d8fbb89f723ce01d12638d5b5d3128ec19
+  sha256: 019018358af7ea18c2c4b397ca65f00a76be27ab6b4af734f4f548458bf1dc82
 
 build:
-  number: 2
+  number: 0
   noarch: python
   entry_points:
     - amset = amset.tools.cli:cli
@@ -55,7 +55,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Electronic transport properties from first-principles calculations'
+  summary: Electronic transport properties from first-principles calculations
   description: |
     AMSET is a package for calculating electronic transport properties 
     from first-principles calculations.
