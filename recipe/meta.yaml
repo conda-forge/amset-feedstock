@@ -24,21 +24,22 @@ requirements:
   run:
     - boltztrap2 ==20.7.1
     - click ==7.1.2
-    - h5py ==2.10.0
+    - h5py ==3.1.0
     - interpolation ==2.1.6
-    - matplotlib-base ==3.3.2
+    - matplotlib-base ==3.3.3
     - memory_profiler ==0.58.0
     - monty ==4.0.2
-    - numpy ==1.19.4
+    - numpy ==1.19.5
+    - numba ==0.51.2
     - pyfftw ==0.12.0
-    - pymatgen ==2020.10.20
+    - pymatgen ==2020.12.31 
     - python >=3.5
-    - quadpy ==0.16.2
-    - scipy ==1.5.3
+    - quadpy ==0.16.5
+    - scipy ==1.6.0
     - spglib ==1.16.0
-    - sumo ==2.1.0
+    - sumo ==2.1.1
     - tabulate ==0.8.7
-    - tqdm ==4.51.0
+    - tqdm ==4.55.1
 
 test:
   imports:
