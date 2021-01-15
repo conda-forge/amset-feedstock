@@ -39,7 +39,7 @@ requirements:
     - spglib ==1.16.0
     - sumo ==2.1.1
     - tabulate ==0.8.7
-    - tqdm ==4.55.1
+    - tqdm ==4.56.0
 
 test:
   imports:
