@@ -1,5 +1,5 @@
 {% set name = "amset" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amset-{{ version }}.tar.gz
-  sha256: 7692be16213ec7375bbf0688c0171e42e74add2821fb96eac86aee7afc0291c9
+  sha256: 4b9437a1ede579ede4ab7cb44015705e86fc52c6df8e696b7691b9c0a8b89c8b
 
 build:
   number: 0
@@ -32,14 +32,14 @@ requirements:
     - numpy ==1.19.5
     - numba ==0.51.2
     - pyfftw ==0.12.0
-    - pymatgen ==2020.12.31 
+    - pymatgen ==2020.12.31
     - python >=3.5
     - quadpy ==0.16.5
     - scipy ==1.6.0
     - spglib ==1.16.0
     - sumo ==2.1.1
     - tabulate ==0.8.7
-    - tqdm ==4.55.1
+    - tqdm ==4.56.0
 
 test:
   imports:
