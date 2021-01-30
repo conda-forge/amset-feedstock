@@ -35,8 +35,8 @@ requirements:
     - pymatgen ==2020.12.31
     - python >=3.5
     - quadpy ==0.16.5
-    - scipy ==1.6.1
-    - spglib ==1.16.0
+    - scipy ==1.6.0
+    - spglib ==1.16.1
     - sumo ==2.2.1
     - tabulate ==0.8.7
     - tqdm ==4.56.0
