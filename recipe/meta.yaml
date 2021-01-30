@@ -1,5 +1,5 @@
 {% set name = "amset" %}
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amset-{{ version }}.tar.gz
-  sha256: cefd6b1364af506b83294f6a4fd2272f91bf8b0039a84b8e5c001593be488e5d
+  sha256: 04dc0d5f59e78dbfa958dd0c3667902969938e4b3c035b1b06d1d4d24b80c6d2
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - click ==7.1.2
     - h5py ==3.1.0
     - interpolation ==2.1.6
-    - matplotlib-base ==3.3.3
+    - matplotlib-base ==3.3.4
     - memory_profiler ==0.58.0
     - monty ==4.0.2
     - numpy ==1.19.5
@@ -36,7 +36,7 @@ requirements:
     - python >=3.5
     - quadpy ==0.16.5
     - scipy ==1.6.0
-    - spglib ==1.16.0
+    - spglib ==1.16.1
     - sumo ==2.2.1
     - tabulate ==0.8.7
     - tqdm ==4.56.0
