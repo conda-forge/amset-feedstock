@@ -1,5 +1,5 @@
 {% set name = "amset" %}
-{% set version = "0.4.9" %}
+{% set version = "0.4.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amset-{{ version }}.tar.gz
-  sha256: bfd95d4971b6f8e19a93fff0d2ec70a4e249876013d4456a9bac262fa0bd438c
+  sha256: 52794586898e72f681a375a253e2613e910f021b678ef7b2f9800f41639368a1
 
 build:
   number: 0
