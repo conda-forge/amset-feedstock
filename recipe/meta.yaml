@@ -1,5 +1,5 @@
 {% set name = "amset" %}
-{% set version = "0.4.9" %}
+{% set version = "0.4.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/amset-{{ version }}.tar.gz
-  sha256: bfd95d4971b6f8e19a93fff0d2ec70a4e249876013d4456a9bac262fa0bd438c
+  sha256: 52794586898e72f681a375a253e2613e910f021b678ef7b2f9800f41639368a1
 
 build:
   number: 0
@@ -24,22 +24,22 @@ requirements:
   run:
     - boltztrap2 ==20.7.1
     - click ==7.1.2
-    - h5py ==3.1.0
-    - interpolation ==2.1.6
-    - matplotlib-base ==3.3.4
+    - h5py ==3.2.1
+    - interpolation ==2.2.1
+    - matplotlib-base ==3.4.1
     - memory_profiler ==0.58.0
-    - monty ==4.0.2
-    - numpy ==1.20.1
-    - numba ==0.51.2
+    - monty ==2021.3.3
+    - numpy ==1.20.2
+    - numba ==0.53.1
     - pyfftw ==0.12.0
-    - pymatgen ==2021.2.14
+    - pymatgen ==2022.0.5
     - python >=3.5
     - quadpy ==0.16.6
-    - scipy ==1.6.0
+    - scipy ==1.6.2
     - spglib ==1.16.1
-    - sumo ==2.2.1
-    - tabulate ==0.8.7
-    - tqdm ==4.56.2
+    - sumo ==2.2.3
+    - tabulate ==0.8.9
+    - tqdm ==4.60.0
 
 test:
   imports:
