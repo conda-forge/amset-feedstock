@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.5
+    - setuptools
   run:
     - boltztrap2 ==20.7.1
     - click ==7.1.2
