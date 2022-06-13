@@ -1,7 +1,6 @@
 {% set name = "amset" %}
 {% set version = "0.4.17" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,40 +10,38 @@ source:
   sha256: f83c943f8634d00eaaa2183305fb6c8fb4e09432b5d90382d8f5086275d8060d
 
 build:
-  number: 0
-  noarch: python
   entry_points:
     - amset = amset.tools.cli:cli
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - numpy
     - pip
-    - python >=3.5
+    - python >=3.8
   run:
-    - boltztrap2 ==20.7.1
-    - click ==7.1.2
-    - h5py ==3.2.1
-    - interpolation ==2.2.1
-    - matplotlib-base ==3.4.1
-    - memory_profiler ==0.58.0
-    - monty ==2021.3.3
-    - numpy ==1.20.2
-    - numba ==0.53.1
-    - pyfftw ==0.12.0
-    - pymatgen ==2022.0.6
-    - python >=3.5
-    - quadpy ==0.16.6
-    - scipy ==1.6.2
-    - spglib ==1.16.1
-    - sumo ==2.2.3
-    - tabulate ==0.8.9
-    - tqdm ==4.60.0
+    - boltztrap2
+    - click
+    - h5py
+    - interpolation
+    - matplotlib-base
+    - memory_profiler
+    - monty
+    - numba
+    - pyfftw
+    - pymatgen >=2022.0.16
+    - python >=3.8
+    - scipy
+    - spglib
+    - sumo
+    - tabulate
+    - tqdm
 
 test:
   imports:
     - amset
-    - amset.core
   commands:
     - pip check
     - amset --help
@@ -52,16 +49,10 @@ test:
     - pip
 
 about:
-  home: https://hackingmaterials.lbl.gov/amset/
+  home: https://github.com/hackingmaterials/amset
+  summary: AMSET is a tool to calculate carrier transport properties from ab initio calculation data
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE
-  summary: Electronic transport properties from first-principles calculations
-  description: |
-    AMSET is a package for calculating electronic transport properties 
-    from first-principles calculations.
-  doc_url: https://hackingmaterials.lbl.gov/amset/
-  dev_url: https://github.com/hackingmaterials/amset
 
 extra:
   recipe-maintainers:
