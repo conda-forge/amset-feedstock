@@ -1,21 +1,13 @@
 About amset
 ===========
 
-Home: https://hackingmaterials.lbl.gov/amset/
+Home: https://github.com/hackingmaterials/amset
 
 Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/amset-feedstock/blob/main/LICENSE.txt)
 
-Summary: Electronic transport properties from first-principles calculations
-
-Development: https://github.com/hackingmaterials/amset
-
-Documentation: https://hackingmaterials.lbl.gov/amset/
-
-AMSET is a package for calculating electronic transport properties
-from first-principles calculations.
-
+Summary: AMSET is a tool to calculate carrier transport properties from ab initio calculation data
 
 Current build status
 ====================
