@@ -1,11 +1,11 @@
-About amset
-===========
+About amset-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/amset-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hackingmaterials/amset
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/amset-feedstock/blob/main/LICENSE.txt)
 
 Summary: AMSET is a tool to calculate carrier transport properties from ab initio calculation data
 
