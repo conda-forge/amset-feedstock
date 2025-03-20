@@ -1,5 +1,5 @@
 {% set name = "amset" %}
-{% set version = "0.4.22" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/amset-{{ version }}.tar.gz
-  sha256: b23aa4c3187bdeef8a79db112f116584214b173c9a8c2b6f231b94a301606427
+  sha256: 77d839167d061eaf869f1f98ba499d53a3036b532d96d5ef0ed88cccf8509184
 
 build:
   entry_points:
     - amset = amset.tools.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
