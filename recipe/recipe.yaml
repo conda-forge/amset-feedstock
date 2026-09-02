@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: amset
-  version: "0.5.1"
+  version: 0.5.1
 
 package:
   name: ${{ name|lower }}
@@ -15,7 +15,7 @@ source:
 build:
   number: 1
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
       - amset = amset.tools.cli:cli
@@ -24,7 +24,7 @@ requirements:
   host:
     - numpy
     - pip
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools
   run:
     - boltztrap2
@@ -55,7 +55,7 @@ tests:
   - requirements:
       run:
         - pip
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
     script:
       - amset --help
 
