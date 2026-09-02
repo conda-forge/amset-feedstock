@@ -39,6 +39,7 @@ requirements:
     - pymatgen >=2022.0.16
     - python >=${{ python_min }}
     - scipy
+    - setuptools <80
     - spglib
     - sumo
     - tabulate
