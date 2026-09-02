@@ -25,7 +25,7 @@ requirements:
     - numpy
     - pip
     - python ${{ python_min }}.*
-    - setuptools
+    - setuptools <80
   run:
     - boltztrap2
     - click
